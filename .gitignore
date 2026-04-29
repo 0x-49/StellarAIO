@@ -1,20 +1,7 @@
-# v0 runtime files
-__v0_runtime_loader.js
-__v0_devtools.tsx
-__v0_jsx-dev-runtime.ts
-
-# Common ignores
 node_modules
-.next/
-.env*.local
+dist
+*.log
 .DS_Store
-
-# Build artifacts
-tsconfig.app.tsbuildinfo
-
-# Dev logs
-vite*.log
-
-# Temp/backup
-static-original.html
-*.mjs
+.env
+.env.local
+*.tsbuildinfo
