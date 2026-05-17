@@ -1,0 +1,119 @@
+{
+  "ratio": "1:1",
+  "preset": "bold",
+  "brand": {
+    "handle": "@stellaraio"
+  },
+  "slides": [
+    {
+      "archetype": "titleCard",
+      "data": {
+        "issue": "Drop Notes · 03",
+        "title": "Five AIO bot mistakes that cost you the drop.",
+        "subtitle": "The setup errors that turn a $200 subscription into a $0 ROI within the first week.",
+        "author": "StellarAIO",
+        "authorRole": "Drop Notes, May 2026"
+      }
+    },
+    {
+      "archetype": "list",
+      "data": {
+        "eyebrow": "The five",
+        "title": "What new botters always get wrong.",
+        "items": [
+          {
+            "title": "Datacenter proxies",
+            "body": "On Walmart, Target and SNKRS, DC proxies eat instant bans. Residential or ISP only."
+          },
+          {
+            "title": "Card velocity",
+            "body": "Same card across 50 tasks → 100% decline rate. Spread across profile groups."
+          },
+          {
+            "title": "No warming",
+            "body": "Fresh Pokémon Center accounts get queue-priority penalties. Warm for 2 weeks first."
+          },
+          {
+            "title": "Single task group",
+            "body": "One module per drop is a recipe to lose. Run 5–10 tasks per profile."
+          },
+          {
+            "title": "Missing CAPTCHA budget",
+            "body": "Auto-solvers cost $1–$3 per 1k. Without credit, the bot stalls mid-checkout."
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "comparison",
+      "data": {
+        "eyebrow": "Setup A vs Setup B",
+        "title": "Why one botter hits, the other doesn't.",
+        "left": {
+          "label": "Setup A — fails",
+          "headline": "Default everything.",
+          "points": [
+            "1 datacenter proxy pool.",
+            "1 card, 50 tasks.",
+            "No CAPTCHA credits loaded.",
+            "Cold accounts day-of."
+          ]
+        },
+        "right": {
+          "label": "Setup B — hits",
+          "headline": "Tuned per retailer.",
+          "points": [
+            "Residential ISP per task.",
+            "5 cards rotated by profile.",
+            "$30 CAPTCHA balance pre-funded.",
+            "Accounts warmed 14+ days."
+          ]
+        }
+      }
+    },
+    {
+      "archetype": "stepSequence",
+      "data": {
+        "eyebrow": "Fix the stack",
+        "title": "Four steps to a working setup.",
+        "steps": [
+          {
+            "title": "Audit the proxies",
+            "body": "List sites you cook. Match proxy type per site — DC on Shopify, residential on Walmart."
+          },
+          {
+            "title": "Group your cards",
+            "body": "Create 5 profile groups, one card each. Set max 10 tasks per profile."
+          },
+          {
+            "title": "Pre-fund solvers",
+            "body": "Top up your CAPTCHA balance to $50 minimum before a major drop."
+          },
+          {
+            "title": "Warm before drops",
+            "body": "Browse, add to cart, log in on every account for 14 days pre-launch."
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "bigNumber",
+      "data": {
+        "eyebrow": "The fix is cheap",
+        "number": "$30",
+        "unit": "",
+        "caption": "is the all-in cost of upgrading from datacenter to residential proxies for one major Pokémon drop. Most missed cops cost more.",
+        "footnote": "Based on 5GB residential plans at $6/GB"
+      }
+    },
+    {
+      "archetype": "cta",
+      "data": {
+        "eyebrow": "Setup matters more than the bot",
+        "title": "Get the bot that ships with sane defaults.",
+        "subtitle": "StellarAIO's 24/7 Discord catches setup mistakes before the drop.",
+        "action": "Get StellarAIO"
+      }
+    }
+  ]
+}

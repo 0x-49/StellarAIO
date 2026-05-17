@@ -1,0 +1,99 @@
+{
+  "ratio": "1:1",
+  "preset": "mono",
+  "brand": {
+    "handle": "@stellaraio"
+  },
+  "slides": [
+    {
+      "archetype": "titleCard",
+      "data": {
+        "issue": "Glossary · 01",
+        "title": "Speak fluent AIO botting.",
+        "subtitle": "The eleven terms every reseller uses in Discord — translated for newcomers.",
+        "author": "StellarAIO",
+        "authorRole": "Glossary, May 2026"
+      }
+    },
+    {
+      "archetype": "list",
+      "data": {
+        "eyebrow": "The basics",
+        "title": "Core vocabulary, no fluff.",
+        "items": [
+          {
+            "title": "AIO",
+            "body": "All-In-One. Software that automates checkout across many retailers from one dashboard."
+          },
+          {
+            "title": "Task",
+            "body": "One configured purchase attempt — a profile + proxy + size + retailer URL."
+          },
+          {
+            "title": "Module",
+            "body": "Retailer-specific logic. StellarAIO ships 70+ modules (Walmart, Best Buy, SNKRS, etc.)."
+          },
+          {
+            "title": "Cook",
+            "body": "A successful checkout. \"Did you cook?\" = \"Did you get a confirmation email?\""
+          },
+          {
+            "title": "Cooks group",
+            "body": "Discord channel where members post confirmation emails as proof."
+          },
+          {
+            "title": "Proxy",
+            "body": "A relay IP. Residential proxies look like real home internet to retailers."
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "list",
+      "data": {
+        "eyebrow": "Advanced",
+        "title": "Words you'll hear on drop day.",
+        "items": [
+          {
+            "title": "Profile group",
+            "body": "A set of billing profiles, each tied to a different card and shipping address."
+          },
+          {
+            "title": "Captcha solver",
+            "body": "External service (2Captcha, CapMonster) that solves CAPTCHAs for the bot."
+          },
+          {
+            "title": "Queue spot",
+            "body": "Random position assigned by the retailer at drop time. You don't control it."
+          },
+          {
+            "title": "ATC",
+            "body": "Add To Cart — the first irreversible step. If ATC fails, checkout never happens."
+          },
+          {
+            "title": "Restock",
+            "body": "When a sold-out SKU goes back in stock mid-day. Bots monitor for this 24/7."
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "quote",
+      "data": {
+        "eyebrow": "On terminology",
+        "text": "The reseller community has a vocabulary because every word saves time. Once you know what ATC, queue and module mean, the Discord stops being noise.",
+        "attribution": "StellarAIO support",
+        "role": "From the 24/7 community channel"
+      }
+    },
+    {
+      "archetype": "cta",
+      "data": {
+        "eyebrow": "Want the full glossary?",
+        "title": "Forty more terms on the site.",
+        "subtitle": "Bookmark the glossary page — built so newcomers stop having to ask in #general.",
+        "action": "Read full glossary"
+      }
+    }
+  ]
+}

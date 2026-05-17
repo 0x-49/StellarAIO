@@ -5,7 +5,9 @@ import Index from './pages/Index';
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const TermsOfConditions = lazy(() => import('./pages/TermsOfConditions'));
 const BlogIndex = lazy(() => import('./pages/BlogIndex'));
+const BlogPost = lazy(() => import('./pages/BlogPost'));
 const Glossary = lazy(() => import('./pages/Glossary'));
+const About = lazy(() => import('./pages/About'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 export default function App() {
@@ -14,7 +16,9 @@ export default function App() {
       <Suspense fallback={<div className="min-h-screen" />}>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
           <Route path="/blog" element={<BlogIndex />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsOfConditions />} />

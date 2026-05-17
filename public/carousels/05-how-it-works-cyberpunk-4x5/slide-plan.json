@@ -1,0 +1,127 @@
+{
+  "ratio": "4:5",
+  "preset": "cyberpunk",
+  "brand": {
+    "handle": "@stellaraio"
+  },
+  "slides": [
+    {
+      "archetype": "titleCard",
+      "data": {
+        "issue": "Drop Notes · 04",
+        "title": "How StellarAIO fires 70+ checkouts in parallel.",
+        "subtitle": "The architecture that turns a $199 subscription into a parallel checkout machine.",
+        "author": "StellarAIO",
+        "authorRole": "Drop Notes, May 2026"
+      }
+    },
+    {
+      "archetype": "bigNumber",
+      "data": {
+        "eyebrow": "Coverage",
+        "number": "70+",
+        "unit": "",
+        "caption": "retailer modules ship in one subscription. Walmart, Pokémon Center, Best Buy, Target, AMD, SNKRS, Foot Locker, and 60+ more.",
+        "footnote": "Source: StellarAIO live Whop product page, 2026"
+      }
+    },
+    {
+      "archetype": "stepSequence",
+      "data": {
+        "eyebrow": "Anatomy of a cook",
+        "title": "Five things happen in under one second.",
+        "steps": [
+          {
+            "title": "Monitor fires",
+            "body": "StellarAIO's monitor detects new SKU stock and queues every task in the matching group."
+          },
+          {
+            "title": "Proxy attaches",
+            "body": "Each task picks a fresh residential IP from its assigned pool. No shared identity."
+          },
+          {
+            "title": "Add-to-cart",
+            "body": "ATC request fires using a pre-built session. Sub-50ms on every supported module."
+          },
+          {
+            "title": "Auto-solve CAPTCHA",
+            "body": "Cloudflare Turnstile and reCAPTCHA solved automatically via integrated solver."
+          },
+          {
+            "title": "Payment + confirm",
+            "body": "Saved billing profile fires payment. Confirmation email lands in inbox."
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "statCards",
+      "data": {
+        "eyebrow": "The numbers",
+        "title": "What you get for $199 / 3 months.",
+        "cards": [
+          {
+            "value": "70+",
+            "unit": "",
+            "label": "Retailer modules",
+            "sublabel": "one dashboard"
+          },
+          {
+            "value": "<50",
+            "unit": "ms",
+            "label": "Checkout speed",
+            "sublabel": "fastest tier"
+          },
+          {
+            "value": "24/7",
+            "unit": "",
+            "label": "Discord support",
+            "sublabel": "real staff"
+          },
+          {
+            "value": "256",
+            "unit": "",
+            "label": "Whop reviews",
+            "sublabel": "4.8 average"
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "comparison",
+      "data": {
+        "eyebrow": "Single-site vs AIO",
+        "title": "Why one subscription beats five.",
+        "left": {
+          "label": "Five single-site bots",
+          "headline": "Five subscriptions.",
+          "points": [
+            "$50–$80 per bot, per month.",
+            "Five dashboards to learn.",
+            "No shared task groups.",
+            "Updates land at different times."
+          ]
+        },
+        "right": {
+          "label": "One AIO",
+          "headline": "One dashboard.",
+          "points": [
+            "$66/month effective on StellarAIO.",
+            "One UI for every retailer.",
+            "Shared profiles, proxies, cards.",
+            "Same-day patches across all modules."
+          ]
+        }
+      }
+    },
+    {
+      "archetype": "cta",
+      "data": {
+        "eyebrow": "Ready to cook?",
+        "title": "70 retailers. One subscription.",
+        "subtitle": "Activate via Whop in under 2 minutes. Instant access, cancel any time.",
+        "action": "Get StellarAIO"
+      }
+    }
+  ]
+}

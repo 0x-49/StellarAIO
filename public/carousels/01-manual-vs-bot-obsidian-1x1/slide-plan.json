@@ -1,0 +1,127 @@
+{
+  "ratio": "1:1",
+  "preset": "obsidian",
+  "brand": {
+    "handle": "@stellaraio"
+  },
+  "slides": [
+    {
+      "archetype": "titleCard",
+      "data": {
+        "issue": "Drop Notes · 01",
+        "title": "Why manual buyers lose every limited drop.",
+        "subtitle": "A five-frame teardown of why fingers and F5 can no longer beat the bots.",
+        "author": "StellarAIO",
+        "authorRole": "Drop Notes, May 2026"
+      }
+    },
+    {
+      "archetype": "bigNumber",
+      "data": {
+        "eyebrow": "The speed gap",
+        "number": "50",
+        "unit": "ms",
+        "caption": "AIO bot checkout speed. Manual buyers average 8–12 seconds. The drop is gone in under one.",
+        "footnote": "Source: StellarAIO module benchmarks, 2026"
+      }
+    },
+    {
+      "archetype": "comparison",
+      "data": {
+        "eyebrow": "Same drop, two buyers",
+        "title": "Why one of them sees the confirmation email.",
+        "left": {
+          "label": "Manual",
+          "headline": "Tab, refresh, hope.",
+          "points": [
+            "One browser, one site, one tab.",
+            "Single home IP, easily rate-limited.",
+            "Solve every CAPTCHA by hand.",
+            "Type card details under stress."
+          ]
+        },
+        "right": {
+          "label": "AIO bot",
+          "headline": "Fires in parallel.",
+          "points": [
+            "70+ retailers running at once.",
+            "Residential proxies per task.",
+            "Auto-solver handles Cloudflare.",
+            "Cards saved, ATC pre-cached."
+          ]
+        }
+      }
+    },
+    {
+      "archetype": "list",
+      "data": {
+        "eyebrow": "What kills manual checkouts",
+        "title": "Five things you cannot out-click.",
+        "items": [
+          {
+            "title": "Queue lottery",
+            "body": "Walmart, Pokémon Center and SNKRS all use random queue assignment."
+          },
+          {
+            "title": "Anti-bot challenges",
+            "body": "Cloudflare Turnstile blocks slow human-speed sessions."
+          },
+          {
+            "title": "Card velocity rules",
+            "body": "Same IP + same card + retry = soft block in under a minute."
+          },
+          {
+            "title": "Stock allocation",
+            "body": "Most inventory clears in the first sub-second of the drop."
+          },
+          {
+            "title": "Backend rate limits",
+            "body": "Carting fails silently when the API throttles."
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "statCards",
+      "data": {
+        "eyebrow": "The math",
+        "title": "What the gap looks like at scale.",
+        "cards": [
+          {
+            "value": "<50",
+            "unit": "ms",
+            "label": "Bot checkout",
+            "sublabel": "ATC + payment fire"
+          },
+          {
+            "value": "8–12",
+            "unit": "s",
+            "label": "Manual checkout",
+            "sublabel": "tab, fill, click"
+          },
+          {
+            "value": "70+",
+            "unit": "",
+            "label": "Retailers in parallel",
+            "sublabel": "one dashboard"
+          },
+          {
+            "value": "1",
+            "unit": "",
+            "label": "Tab a human gets",
+            "sublabel": "and one IP"
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "cta",
+      "data": {
+        "eyebrow": "Stop missing drops",
+        "title": "Run the bot the resellers run.",
+        "subtitle": "4.8★ from 256 verified Whop reviews. Activate in under 2 minutes.",
+        "action": "Get StellarAIO"
+      }
+    }
+  ]
+}

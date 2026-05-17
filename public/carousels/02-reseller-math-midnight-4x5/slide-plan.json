@@ -1,0 +1,134 @@
+{
+  "ratio": "4:5",
+  "preset": "midnight",
+  "brand": {
+    "handle": "@stellaraio"
+  },
+  "slides": [
+    {
+      "archetype": "titleCard",
+      "data": {
+        "issue": "Drop Notes · 02",
+        "title": "The sneaker reselling math nobody runs.",
+        "subtitle": "What it actually costs to flip a Jordan drop — and the margin left after every line item.",
+        "author": "StellarAIO",
+        "authorRole": "Drop Notes, May 2026"
+      }
+    },
+    {
+      "archetype": "statWithContext",
+      "data": {
+        "eyebrow": "Where the money goes",
+        "stat": "44",
+        "unit": "%",
+        "explainer": "Of a typical $400 sneaker resale, gross profit is ~44%. Then platform fees, shipping, proxy and bot subscriptions, taxes, and the inevitable failed cooks eat another 18–25%. The number that actually lands in your bank account is closer to 20% — and only on the pairs that didn't sit dead-stock.",
+        "source": "Aggregated from StockX seller dashboards, 2025"
+      }
+    },
+    {
+      "archetype": "statCards",
+      "data": {
+        "eyebrow": "The breakdown",
+        "title": "Per $400 flip, line by line.",
+        "cards": [
+          {
+            "value": "210",
+            "unit": "$",
+            "label": "Retail cost",
+            "sublabel": "drop price + tax"
+          },
+          {
+            "value": "52",
+            "unit": "$",
+            "label": "Fees + shipping",
+            "sublabel": "StockX 9% + payout"
+          },
+          {
+            "value": "12",
+            "unit": "$",
+            "label": "Bot + proxy share",
+            "sublabel": "amortised per cop"
+          },
+          {
+            "value": "126",
+            "unit": "$",
+            "label": "Net profit",
+            "sublabel": "~31% margin"
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "list",
+      "data": {
+        "eyebrow": "Hidden costs",
+        "title": "Five line items beginners forget.",
+        "items": [
+          {
+            "title": "Failed cook tax",
+            "body": "Bot fires, card declines, account flags — every miss costs proxy time."
+          },
+          {
+            "title": "Dead-stock holding",
+            "body": "Pairs that don't sell in 30 days tie up cash and shelf space."
+          },
+          {
+            "title": "Sales tax",
+            "body": "Reseller marketplaces report 1099-Ks at $600+. Plan for it."
+          },
+          {
+            "title": "Restock fees",
+            "body": "Returns cost 15–20% in some categories — read the policy."
+          },
+          {
+            "title": "Authentication delays",
+            "body": "Slow payouts compound when you cop in volume."
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "stepSequence",
+      "data": {
+        "eyebrow": "How to actually price",
+        "title": "Four checks before you buy the drop.",
+        "steps": [
+          {
+            "title": "Pull the resale comp",
+            "body": "Last 30-day average on StockX or GOAT, not the all-time high."
+          },
+          {
+            "title": "Subtract platform fees",
+            "body": "9% sale + $5 payout on StockX. Closer to 13% net."
+          },
+          {
+            "title": "Deduct bot share",
+            "body": "Subscription + proxies ÷ expected cops this cycle."
+          },
+          {
+            "title": "Floor your margin",
+            "body": "If after all that the margin is under 25%, skip the drop."
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "quote",
+      "data": {
+        "eyebrow": "From a reseller",
+        "text": "The bot is the cheapest part of the stack. What kills new resellers is paying for proxies they don't use and hyping pairs that sit dead-stock for 90 days.",
+        "attribution": "Verified Whop review",
+        "role": "256-review aggregate, 2026"
+      }
+    },
+    {
+      "archetype": "cta",
+      "data": {
+        "eyebrow": "Run the math, then run the bot",
+        "title": "Stop guessing margin. Start tracking it.",
+        "subtitle": "StellarAIO ships with a backtesting window so you can replay every drop you missed.",
+        "action": "Get StellarAIO"
+      }
+    }
+  ]
+}
