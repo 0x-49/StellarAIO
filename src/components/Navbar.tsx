@@ -3,16 +3,13 @@ import CTA from './CTA';
 
 const Logo = () => (
   <Link to="/" className="flex items-center gap-2.5 font-bold text-base no-underline group">
-    <div style={{
-      width: 34, height: 34, borderRadius: 10,
-      background: 'linear-gradient(135deg, #a855f7 0%, #06b6d4 100%)',
-      display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
-      boxShadow: '0 4px 14px rgba(168,85,247,.45)',
-    }}>
-      <svg viewBox="0 0 20 20" fill="none" style={{ width: 15, height: 15 }}>
-        <path d="M11 2L4 11h7l-2 7 9-10h-7l2-6z" fill="white" opacity={0.95} />
-      </svg>
-    </div>
+    <img
+      src="/logo.png"
+      alt="StellarAIO logo"
+      width={36}
+      height={36}
+      style={{ width: 36, height: 36, flexShrink: 0, filter: 'drop-shadow(0 4px 14px rgba(168,85,247,.45))' }}
+    />
     <span style={{ color: '#f1f5f9', letterSpacing: '0.05em', fontSize: '0.92rem' }}>
       STELLAR<span style={{ color: '#a855f7' }}>AIO</span>
     </span>

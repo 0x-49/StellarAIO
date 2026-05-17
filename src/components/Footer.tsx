@@ -3,16 +3,13 @@ import { AFFILIATE_URL } from '../data/links';
 
 const Logo = () => (
   <div className="flex items-center gap-2.5 font-bold text-base">
-    <div style={{
-      width: 30, height: 30, borderRadius: 9,
-      background: 'linear-gradient(135deg, #a855f7 0%, #06b6d4 100%)',
-      display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
-      boxShadow: '0 3px 10px rgba(168,85,247,.4)',
-    }}>
-      <svg viewBox="0 0 20 20" fill="none" style={{ width: 13, height: 13 }}>
-        <path d="M11 2L4 11h7l-2 7 9-10h-7l2-6z" fill="white" opacity={0.95} />
-      </svg>
-    </div>
+    <img
+      src="/logo.png"
+      alt="StellarAIO logo"
+      width={32}
+      height={32}
+      style={{ width: 32, height: 32, flexShrink: 0, filter: 'drop-shadow(0 3px 10px rgba(168,85,247,.4))' }}
+    />
     <span style={{ color: '#94a3b8', letterSpacing: '0.05em', fontSize: '0.88rem' }}>
       STELLAR<span style={{ color: '#a855f7' }}>AIO</span>
     </span>
