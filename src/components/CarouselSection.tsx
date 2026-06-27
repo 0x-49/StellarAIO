@@ -96,7 +96,7 @@ function SlideTrack({ deck }: { deck: CarouselDeck }) {
               opacity: i === index ? 1 : 0.76,
             }}
             title={s.caption}
-            aria-label={`Open full-size slide ${i + 1}: ${s.caption}`}
+            aria-label={`Click to expand slide ${i + 1}: ${s.caption}`}
           >
             <img
               src={s.src}
@@ -111,7 +111,7 @@ function SlideTrack({ deck }: { deck: CarouselDeck }) {
               className="absolute right-3 bottom-3 inline-flex items-center gap-2 rounded-lg px-3 py-2 text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity"
               style={{ background: 'rgba(7,11,22,.82)', border: '1px solid rgba(255,255,255,.18)', color: '#e2e8f0', backdropFilter: 'blur(12px)' }}
             >
-              Open PNG <ArrowIcon />
+              Click to expand <ArrowIcon />
             </span>
           </a>
         ))}
@@ -128,9 +128,7 @@ function SlideTrack({ deck }: { deck: CarouselDeck }) {
         </div>
 
         <div className="flex items-center gap-2 flex-shrink-0">
-          <a href={activeSlide.src} target="_blank" rel="noopener" className="btn-secondary !py-2 !px-3 text-sm">
-            Full-size slide
-          </a>
+
           <a href={AFFILIATE_URL} target="_blank" rel="nofollow sponsored noopener" className="btn-primary !py-2 !px-3 text-sm">
             Get StellarAIO <ArrowIcon />
           </a>
@@ -183,7 +181,7 @@ export default function CarouselSection() {
               See the drop-day story before you buy.
             </h2>
             <p className="text-muted mt-5 max-w-2xl leading-relaxed text-lg">
-              Swipe the proof, setup, and operator-story decks. Click any slide for the full PNG, then jump straight to the Whop checkout when the stack makes sense.
+              Swipe the proof, setup, and operator-story decks. Click any slide to expand it, then jump straight to the Whop checkout when the stack makes sense.
             </p>
           </div>
           <div className="glass rounded-2xl p-4">
@@ -253,7 +251,7 @@ export default function CarouselSection() {
               <div>
                 <div className="font-bold" style={{ color: '#f8fafc' }}>{deck.takeaway}</div>
                 <div className="text-xs font-mono mt-2" style={{ color: '#94a3b8' }}>
-                  {deck.slides.length} slides / {deck.width}x{deck.height}px / click any slide for full-size PNG
+                  {deck.slides.length} slides / {deck.width}x{deck.height}px / click any slide to expand
                 </div>
               </div>
               <div className="flex gap-2 flex-wrap">
@@ -267,3 +265,4 @@ export default function CarouselSection() {
     </section>
   );
 }
+
