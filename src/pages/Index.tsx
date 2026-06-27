@@ -7,6 +7,7 @@ import InlineCTA from '../components/InlineCTA';
 import ReviewsSection from '../components/ReviewsSection';
 import VideoSection from '../components/VideoSection';
 import CarouselSection from '../components/CarouselSection';
+import LaunchStoryVideo from '../components/LaunchStoryVideo';
 import HonestComparison from '../components/HonestComparison';
 import Tradeoffs from '../components/Tradeoffs';
 import PricingSection from '../components/PricingSection';
@@ -68,7 +69,7 @@ export default function Index() {
             '@type': 'Organization',
             name: 'Stellar AIO',
             url: 'https://stellaraio.io',
-            sameAs: ['https://whop.com/stellaraio/stellaraio'],
+            sameAs: [AFFILIATE_URL],
           },
         ]}
       />
@@ -82,6 +83,7 @@ export default function Index() {
         <InlineCTA variant="a" />
         <ReviewsSection />
         <InlineCTA variant="e" size="slim" />
+        <LaunchStoryVideo />
         <CarouselSection />
         <VideoSection />
         <InlineCTA variant="b" />
@@ -97,3 +99,4 @@ export default function Index() {
     </div>
   );
 }
+

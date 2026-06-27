@@ -1,5 +1,5 @@
 import { reviews } from '../data/reviews';
-import { REVIEWS_URL } from '../data/links';
+import { AFFILIATE_URL } from '../data/links';
 
 function Stars({ n, size = 'sm' }: { n: number; size?: 'sm' | 'md' }) {
   const px = size === 'md' ? 20 : 14;
@@ -115,9 +115,9 @@ export default function ReviewsSection() {
 
         <p className="text-xs text-muted text-center mt-6 font-mono">
           Source:{' '}
-          <a href={REVIEWS_URL} target="_blank" rel="noopener"
+          <a href={AFFILIATE_URL} target="_blank" rel="noopener sponsored"
             className="underline hover:text-secondary underline-offset-2">
-            whop.com/stellaraio/stellaraio/reviews
+            whop.com/stellaraio/stellaraio?a=digitalartlab
           </a>{' '}
           · verbatim quotes · last verified 2026-04-29
         </p>
