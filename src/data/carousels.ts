@@ -1,4 +1,4 @@
-export interface CarouselSlide {
+﻿export interface CarouselSlide {
   src: string;
   archetype: string;
   caption: string;
@@ -10,25 +10,28 @@ export interface CarouselDeck {
   title: string;
   blurb: string;
   takeaway: string;
-  ratio: '1:1' | '4:5';
+  ratio: '1:1' | '4:5' | '16:9';
   preset: string;
   width: number;
   height: number;
   slides: CarouselSlide[];
 }
 
-const dims = (ratio: '1:1' | '4:5') =>
-  ratio === '1:1' ? { width: 1080, height: 1080 } : { width: 1080, height: 1350 };
+const dims = (ratio: '1:1' | '4:5' | '16:9') => {
+  if (ratio === '1:1') return { width: 1080, height: 1080 };
+  if (ratio === '4:5') return { width: 1080, height: 1350 };
+  return { width: 1920, height: 1080 };
+};
 
 export const carousels: CarouselDeck[] = [
-  // ───────────────────────────────────────────────────────────
-  // 01 — Manual vs Bot
-  // ───────────────────────────────────────────────────────────
+  // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // 01 â€” Manual vs Bot
+  // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   {
     slug: 'manual-vs-bot',
     title: 'Why manual buyers lose every drop',
     blurb:
-      'Bots fire ATC in 50ms. Humans take 8–12 seconds — and the drop is already gone. Here is exactly what the bot does differently in the sub-second window before stock clears.',
+      'Bots fire ATC in 50ms. Humans take 8â€“12 seconds â€” and the drop is already gone. Here is exactly what the bot does differently in the sub-second window before stock clears.',
     takeaway: 'Manual buyers compete on speed they cannot beat. The gap is ~200x.',
     ratio: '1:1',
     preset: 'obsidian',
@@ -43,7 +46,7 @@ export const carousels: CarouselDeck[] = [
       {
         src: '/carousels/01-manual-vs-bot-obsidian-1x1/02-bigNumber.png',
         archetype: 'bigNumber',
-        caption: 'The speed gap: 50ms vs 8–12 seconds',
+        caption: 'The speed gap: 50ms vs 8â€“12 seconds',
         alt: 'Bot checkout fires in 50 milliseconds. Manual buyers average 8 to 12 seconds. The drop is gone in under one.',
       },
       {
@@ -73,15 +76,15 @@ export const carousels: CarouselDeck[] = [
     ],
   },
 
-  // ───────────────────────────────────────────────────────────
-  // 02 — Reseller math
-  // ───────────────────────────────────────────────────────────
+  // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // 02 â€” Reseller math
+  // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   {
     slug: 'reseller-math',
     title: 'The reseller math nobody runs',
     blurb:
-      "On a $400 sneaker flip, gross margin looks like 44% — but only ~20% actually lands in your bank after fees, proxies, taxes, and dead stock. Here is every line item.",
-    takeaway: 'Floor your margin at 25% after every cost — or skip the drop.',
+      "On a $400 sneaker flip, gross margin looks like 44% â€” but only ~20% actually lands in your bank after fees, proxies, taxes, and dead stock. Here is every line item.",
+    takeaway: 'Floor your margin at 25% after every cost â€” or skip the drop.',
     ratio: '4:5',
     preset: 'midnight',
     ...dims('4:5'),
@@ -95,7 +98,7 @@ export const carousels: CarouselDeck[] = [
       {
         src: '/carousels/02-reseller-math-midnight-4x5/02-statWithContext.png',
         archetype: 'statWithContext',
-        caption: '44% gross — but only ~20% lands',
+        caption: '44% gross â€” but only ~20% lands',
         alt: 'On a $400 flip, gross margin is roughly 44%. After platform fees, shipping, proxies, taxes, and dead stock, the number that lands is closer to 20%.',
       },
       {
@@ -131,9 +134,9 @@ export const carousels: CarouselDeck[] = [
     ],
   },
 
-  // ───────────────────────────────────────────────────────────
-  // 03 — Five mistakes
-  // ───────────────────────────────────────────────────────────
+  // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // 03 â€” Five mistakes
+  // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   {
     slug: 'five-mistakes',
     title: 'Five AIO bot mistakes that cost you',
@@ -172,7 +175,7 @@ export const carousels: CarouselDeck[] = [
         src: '/carousels/03-five-mistakes-bold-1x1/05-bigNumber.png',
         archetype: 'bigNumber',
         caption: '$30 to upgrade your proxies',
-        alt: 'Thirty dollars is the all-in cost of upgrading from datacenter to residential proxies for one major Pokémon drop.',
+        alt: 'Thirty dollars is the all-in cost of upgrading from datacenter to residential proxies for one major PokÃ©mon drop.',
       },
       {
         src: '/carousels/03-five-mistakes-bold-1x1/06-cta.png',
@@ -183,14 +186,14 @@ export const carousels: CarouselDeck[] = [
     ],
   },
 
-  // ───────────────────────────────────────────────────────────
-  // 04 — Glossary
-  // ───────────────────────────────────────────────────────────
+  // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // 04 â€” Glossary
+  // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   {
     slug: 'glossary',
     title: 'Speak fluent AIO botting',
     blurb:
-      'The eleven terms every reseller throws around on Discord — AIO, module, cook, ATC, queue spot, profile group — translated for newcomers so the chat stops being noise.',
+      'The eleven terms every reseller throws around on Discord â€” AIO, module, cook, ATC, queue spot, profile group â€” translated for newcomers so the chat stops being noise.',
     takeaway: 'Learn the vocabulary in 5 minutes, save a week of confusion.',
     ratio: '1:1',
     preset: 'mono',
@@ -229,14 +232,14 @@ export const carousels: CarouselDeck[] = [
     ],
   },
 
-  // ───────────────────────────────────────────────────────────
-  // 05 — How it works
-  // ───────────────────────────────────────────────────────────
+  // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // 05 â€” How it works
+  // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   {
     slug: 'how-it-works',
     title: 'How StellarAIO fires 70+ checkouts at once',
     blurb:
-      'Monitor fires, proxy attaches, ATC, CAPTCHA solve, payment. Five things that happen in under one second on every supported drop — and why one AIO subscription replaces five single-site bots.',
+      'Monitor fires, proxy attaches, ATC, CAPTCHA solve, payment. Five things that happen in under one second on every supported drop â€” and why one AIO subscription replaces five single-site bots.',
     takeaway: 'One bot, one dashboard, every retailer.',
     ratio: '4:5',
     preset: 'cyberpunk',
@@ -258,7 +261,7 @@ export const carousels: CarouselDeck[] = [
         src: '/carousels/05-how-it-works-cyberpunk-4x5/03-stepSequence.png',
         archetype: 'stepSequence',
         caption: 'Anatomy of a sub-second cook',
-        alt: 'Anatomy of a cook: monitor fires, proxy attaches, ATC, CAPTCHA solve, payment and confirm — all in under one second.',
+        alt: 'Anatomy of a cook: monitor fires, proxy attaches, ATC, CAPTCHA solve, payment and confirm â€” all in under one second.',
       },
       {
         src: '/carousels/05-how-it-works-cyberpunk-4x5/04-statCards.png',
@@ -270,7 +273,7 @@ export const carousels: CarouselDeck[] = [
         src: '/carousels/05-how-it-works-cyberpunk-4x5/05-comparison.png',
         archetype: 'comparison',
         caption: 'One AIO vs five single-site bots',
-        alt: 'Five single-site bots cost $50–80 each with five dashboards. One StellarAIO is $66 per month effective with one dashboard.',
+        alt: 'Five single-site bots cost $50â€“80 each with five dashboards. One StellarAIO is $66 per month effective with one dashboard.',
       },
       {
         src: '/carousels/05-how-it-works-cyberpunk-4x5/06-cta.png',
@@ -280,4 +283,54 @@ export const carousels: CarouselDeck[] = [
       },
     ],
   },
+  // 06 - ImageGen 2 drop operator
+  {
+    slug: 'imagegen2-drop-operator',
+    title: 'Drop operator command center',
+    blurb:
+      'A cinematic 16:9 imagegen deck built around the real buying story: manual checkout loses to organized drop operations, parallel task lanes, setup health, and proof signals.',
+    takeaway: 'The product story is not "magic bot." It is an operating layer for faster, cleaner drop-day execution.',
+    ratio: '16:9',
+    preset: 'imagegen2',
+    ...dims('16:9'),
+    slides: [
+      {
+        src: '/carousels/06-imagegen2-drop-operator-16x9/slide_01.png',
+        archetype: 'imagegenHook',
+        caption: 'The drop is gone before checkout loads',
+        alt: 'Cinematic split-screen showing manual checkout lagging behind a StellarAIO-style command center task confirmation.',
+      },
+      {
+        src: '/carousels/06-imagegen2-drop-operator-16x9/slide_02.png',
+        archetype: 'imagegenProblem',
+        caption: 'One tab cannot fight seventy queues',
+        alt: 'Manual laptop overwhelmed by many queue cards next to a structured reseller operations dashboard.',
+      },
+      {
+        src: '/carousels/06-imagegen2-drop-operator-16x9/slide_03.png',
+        archetype: 'imagegenMechanism',
+        caption: 'Monitor, route, queue, verify, pay',
+        alt: 'Five-stage order-flow pipeline with monitoring, routing, cart, verification, and payment modules.',
+      },
+      {
+        src: '/carousels/06-imagegen2-drop-operator-16x9/slide_04.png',
+        archetype: 'imagegenScale',
+        caption: 'Parallel execution beats manual speed',
+        alt: 'Central dashboard with category modules and parallel task lanes for sneakers, cards, consoles, electronics, streetwear, and collectibles.',
+      },
+      {
+        src: '/carousels/06-imagegen2-drop-operator-16x9/slide_05.png',
+        archetype: 'imagegenRealityCheck',
+        caption: 'The tool is not the whole stack',
+        alt: 'Diagnostic board comparing a weak reseller setup with a prepared setup including profiles, payment, account health, stock targets, and margins.',
+      },
+      {
+        src: '/carousels/06-imagegen2-drop-operator-16x9/slide_06.png',
+        archetype: 'imagegenProof',
+        caption: 'Buy the operating layer, not a lottery ticket',
+        alt: 'Proof and CTA command center with rating, reviews, support, instant access, and module-count proof chips.',
+      },
+    ],
+  },
 ];
+

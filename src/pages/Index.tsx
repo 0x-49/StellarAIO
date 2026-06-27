@@ -1,4 +1,4 @@
-import SEO from '../components/SEO';
+﻿import SEO from '../components/SEO';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import FeaturesSection from '../components/FeaturesSection';
@@ -77,6 +77,8 @@ export default function Index() {
       <Navbar />
       <main>
         <Hero />
+        <CarouselSection />
+        <InlineCTA variant="a" size="slim" />
         <FeaturesSection />
         <InlineCTA variant="d" size="slim" />
         <SupportedSites />
@@ -84,7 +86,6 @@ export default function Index() {
         <ReviewsSection />
         <InlineCTA variant="e" size="slim" />
         <LaunchStoryVideo />
-        <CarouselSection />
         <VideoSection />
         <InlineCTA variant="b" />
         <HonestComparison />
@@ -99,4 +100,5 @@ export default function Index() {
     </div>
   );
 }
+
 
